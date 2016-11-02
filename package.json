@@ -1,0 +1,59 @@
+{
+  "name": "memoizepromise",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap tests.js",
+    "test:cover": "tap --coverage tests.js"
+  },
+  "engines": {
+    "node": ">=4.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ChiperSoft/memoizepromise.git"
+  },
+  "keywords": [
+    "promise",
+    "memoize",
+    "memoization",
+    "function",
+    "cache",
+    "caching",
+    "optimize",
+    "performance",
+    "ttl",
+    "expire",
+    "async",
+    "await",
+    "promises",
+    "time",
+    "bluebird",
+    "p-memoize"
+  ],
+  "author": "Jarvis Badgley <chiper@chipersoft.com> (http://chipersoft.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "memoizesync": "~0.5.0"
+  },
+  "devDependencies": {
+    "eslint": "~3.9.1",
+    "eslint-config-chiper": "~2.0.1",
+    "eslint-plugin-node": "~3.0.3",
+    "eslint-plugin-promise": "~3.3.0",
+    "tap": "~8.0.0"
+  },
+  "files": [
+    "index.js"
+  ],
+  "nyc": {
+    "exclude": [
+      "tests.js"
+    ],
+    "reporter": [
+      "lcov",
+      "text"
+    ]
+  }
+}

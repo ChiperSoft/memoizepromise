@@ -27,6 +27,8 @@ lookupUser('linda').then() // this call triggers another fetch
 
 lookupUser.purge('bob'); // removes the cached promise for bob
 lookupUser('bob').then() // this call performs the fetch again
+
+lookupUser.purgeAll(); // removes all cached promises;
 ```
 
 By default the arguments are stringified and concatenated to serve as the caching key. Pass a function as the `argumentsStringifier` option to change the key calculation method.

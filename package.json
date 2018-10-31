@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ChiperSoft/memoizepromise.git"
+    "url": "https://github.com/Twipped/memoizepromise.git"
   },
   "keywords": [
     "promise",
@@ -32,17 +32,17 @@
     "bluebird",
     "p-memoize"
   ],
-  "author": "Jarvis Badgley <chiper@chipersoft.com> (http://chipersoft.com/)",
+  "author": "Jocelyn Badgley <joc@twipped.com>",
   "license": "MIT",
   "dependencies": {
-    "memoizesync": "~0.5.0"
+    "memoizesync": "~1.1.1"
   },
   "devDependencies": {
-    "eslint": "~3.9.1",
-    "eslint-config-chiper": "~2.0.1",
-    "eslint-plugin-node": "~3.0.3",
-    "eslint-plugin-promise": "~3.3.0",
-    "tap": "~8.0.0"
+    "eslint": "~5.8.0",
+    "eslint-config-chiper": "~2.2.0",
+    "eslint-plugin-node": "~8.0.0",
+    "eslint-plugin-promise": "~4.0.1",
+    "tap": "~12.0.1"
   },
   "files": [
     "index.js"

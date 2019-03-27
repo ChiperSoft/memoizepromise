@@ -1,8 +1,11 @@
 {
-	"extends": "chiper/node4",
+	"extends": "twipped/node",
 	"rules": {
 		"no-negated-condition": "off",
 		"max-len": ["warn", 140],
-		"promise/no-native": "off"
+		"promise/no-native": "off",
+		"prefer-spread": "off",
+		"prefer-rest-params": "off",
+		"prefer-arrow-callback": "off"
 	}
 }

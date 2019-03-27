@@ -19,5 +19,6 @@ module.exports = exports = function memoizePromise (fn, options) {
 
 	wrapper.purge = memoizedFn.purge.bind(memoizedFn);
 	wrapper.purgeAll = memoizedFn.purgeAll.bind(memoizedFn);
+	wrapper.prune = memoizedFn.cache.prune.bind(memoizedFn.cache);
 	return wrapper;
 };

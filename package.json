@@ -9,7 +9,7 @@
     "lint": "eslint ./ --fix"
   },
   "engines": {
-    "node": ">=4.2"
+    "node": ">=8"
   },
   "repository": {
     "type": "git",

@@ -4,15 +4,14 @@ var memoize = require('memoizesync');
 
 module.exports = exports = function memoizePromise (fn, options) {
 	var memoizedFn = memoize(fn, options);
-	var wrapper = function () {
-		var args = Array.prototype.slice.call(arguments);
+	var wrapper = function (...args) {
 		var p = memoizedFn.apply(this, args);
 
 		if (!p || typeof p.then !== 'function') {
 			return p;
 		}
 
-		p.then(null, function () { memoizedFn.purge.apply(memoizedFn, args); });
+		p.then(null, memoizedFn.purge(...args));
 
 		return p;
 	};

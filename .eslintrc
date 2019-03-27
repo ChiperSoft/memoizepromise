@@ -4,8 +4,5 @@
 		"no-negated-condition": "off",
 		"max-len": ["warn", 140],
 		"promise/no-native": "off",
-		"prefer-spread": "off",
-		"prefer-rest-params": "off",
-		"prefer-arrow-callback": "off"
 	}
 }
